@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		     body
+          {
+            font-family: Arial, Helvetica, sans-serif;
+          background: url('bgjeep.jpg');
+          background-color: rgba(0,0,0,0.5);
+
+
+          background-repeat: no-repeat;
+          background-attachment: fixed; 
+          background-size: 100% 100%;
+        }
+		     		button {
+  background-color: #4CAF50;
+  color: red;
+  padding: 14px 20px;
+  margin: 8px ;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  border-radius: 25px;
+   margin-left: 100px;
+    }
+    button.acc
+    {
+      width: 80%;
+      margin-left: 1px;
+      border-radius: 1px;
+      padding: 8px 18px;
+      margin: 1px ;
+      margin-right: : 1px;
+    }
+
+     input[type=password],input[type=textarea] {
+  width: 50%;
+  padding: 12px 40px;
+  margin-top:10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+   border-radius: 25px;
+}
+input[type=text]
+{
+  width: 90%;
+  height: 30px;
+  opacity: 10%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #818181;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#events {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#events td, #events th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#events tr:nth-child(even){background-color: rgb(0, 0, 0);}
+
+#events tr:hover {background:rgba(0, 0, 0,0.5);}
+
+#events th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+.container {
+    background: rgb(0, 0, 0); /* Fallback color */
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+
+ margin: auto;
+  width: 60%;
+  border: 1px #73AD21;
+  padding: 10px;
+  }
+</style>
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="admin.htm"> New Events</a>
+  <a href="accepted.html"> Accepted Events</a>
+  <a href="changes.html"> Changing Edits</a>
+  <a href="cmanage.html"> Customers</a>
+ 
+  <a href="payed.html">Paid Customers</a>
+  <a href="aaccount.html">Account</a>
+   <a href="Web_1920___1.html"> Logout</a>
+
+</div>
+<span style="font-size:40px;cursor:pointer;color: white;margin-left: 0px;margin-bottom: 20px;" onclick="openNav()">&#9776;</span>
+<center>
+  <br>
+
+
+<div class="container">
+<table id="events">
+  <tr>
+    <th>Customer Name</th>
+    <th>Event</th>
+    <th>Date</th>
+    <th>Price from</th>
+    <th>Price to</th>
+    
+    <th>Discription</th>
+
+    <th>File</th>
+    <th>Sample</th>
+    <th>Amount</th>
+    <th>Upload</th>
+
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Mariage</td>
+    <td>15/3/2020</td>
+    <td>1000</td>
+    <td>15000</td>
+
+    
+    <td>good dsrsrt gdeydjss dsresfugug hvhfyfgui</td>
+    <td><button class="acc">Download File</button></td>
+    <td> <button class="acc">Upload Demo</button></td>
+    <td><input type="text" placeholder="Rs."></text></td>
+    <td> <button class="acc">Upload Orginal</button></td>
+  </tr>
+</table>
+</div>
+</center>
+</br>
+
+
+  
+ 
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+
+
+        
+         </body>
+         </html>
